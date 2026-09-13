@@ -16,7 +16,7 @@ This specification guides the **AlmondEyeDB** frontend (`almond-eye-db-site`) in
 │    • %USERPROFILE%\Documents\Kyumaru\inventory.json                    │
 │    • %USERPROFILE%\Documents\Kyumaru\veterans.json                     │
 │ 4. User clicks [ Open in Browser & Sync ] in Hachimi overlay:          │
-│    Launches browser to https://database.almond_eye.tech/import/#data=...│
+│    Launches browser to https://database.almond-eye.tech/import/#data=...│
 └───────────────────────────────────┬────────────────────────────────────┘
                                     │ Browser Launch (URL Hash Fragment)
                                     ▼

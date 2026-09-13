@@ -48,7 +48,7 @@ Kyumaru is an ultra-lightweight **Hachimi plugin** for *Umamusume: Pretty Derby*
 │    └─ User Clicks: [ Open in Browser & Sync ]                          │
 │         Spawns worker thread -> Launches default browser via           │
 │         rundll32 url.dll,FileProtocolHandler                           │
-│         "https://database.almond_eye.tech/import/#data=<payload>"      │
+│         "https://database.almond-eye.tech/import/#data=<payload>"      │
 └───────────────────────────────────┬────────────────────────────────────┘
                                     │ Browser Launch (URL Hash)
                                     ▼
@@ -124,7 +124,7 @@ On first launch, Kyumaru generates its configuration file:
 ```json
 {
   "outputPath": "%USERPROFILE%\\Documents\\Kyumaru",
-  "targetUrl": "https://database.almond_eye.tech/import/"
+  "targetUrl": "https://database.almond-eye.tech/import/"
 }
 ```
 

@@ -12,7 +12,7 @@ static SAVE_ROOT: OnceLock<PathBuf> = OnceLock::new();
 static TARGET_URL: OnceLock<String> = OnceLock::new();
 static LOG_MUTEX: Mutex<()> = Mutex::new(());
 
-const DEFAULT_TARGET_URL: &str = "https://database.almond_eye.tech/import/";
+const DEFAULT_TARGET_URL: &str = "https://database.almond-eye.tech/import/";
 
 #[derive(Deserialize, Serialize)]
 pub struct Config {
