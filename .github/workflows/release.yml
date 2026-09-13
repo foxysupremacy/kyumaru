@@ -29,21 +29,18 @@ jobs:
         env:
           CARGO_TARGET_X86_64_PC_WINDOWS_GNU_LINKER: x86_64-w64-mingw32-gcc
 
-      - name: Package DLL
-        run: |
-          mkdir -p dist
-          cp target/x86_64-pc-windows-gnu/release/kyumaru.dll dist/
-          cd dist && zip -q kyumaru-windows-x64.zip kyumaru.dll
+      - name: Stage DLL
+        run: cp target/x86_64-pc-windows-gnu/release/kyumaru.dll dist/
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
           name: kyumaru-windows-x64
-          path: dist/kyumaru-windows-x64.zip
+          path: dist/kyumaru.dll
 
       - name: Create GitHub Release
         if: startsWith(github.ref, 'refs/tags/v')
         uses: softprops/action-gh-release@v2
         with:
-          files: dist/kyumaru-windows-x64.zip
+          files: dist/kyumaru.dll
           generate_release_notes: true
